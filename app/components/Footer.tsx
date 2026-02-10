@@ -6,23 +6,18 @@ const Footer = () => {
   return (
     <footer className="w-full bg-gray-50 border-t border-gray-100 py-12 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        
         {/* Top Section: Logo + Links */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
-          
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <Briefcase className="w-4 h-4 text-white" />
-              </div>
-              <span className="text-xl font-bold text-primary">QuickHirePH</span>
+             
+              <span className="text-xl font-bold text-primary">QuickHire</span>
             </div>
             <p className="text-gray-400 text-sm">
               © 2026 QuickHirePH. All rights reserved.
             </p>
           </div>
-
           {/* Company Links */}
           <div>
             <h4 className="font-semibold text-gray-900 mb-4">Company</h4>
@@ -32,7 +27,6 @@ const Footer = () => {
               <li><Link href="#" className="hover:text-primary transition-colors">Press</Link></li>
             </ul>
           </div>
-
           {/* Support Links */}
           <div>
             <h4 className="font-semibold text-gray-900 mb-4">Support</h4>
@@ -67,6 +61,7 @@ const Footer = () => {
                   className="flex-1 bg-transparent outline-none text-sm text-gray-700 placeholder-gray-400 w-full min-w-0"
                 />
               </div>
+
               <button className="px-4 py-2 bg-primary hover:bg-primary-hover text-white text-sm font-medium rounded-lg transition-colors shrink-0">
                 Subscribe
               </button>

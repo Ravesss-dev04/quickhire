@@ -92,7 +92,6 @@ export default function Hero() {
               className="w-full bg-transparent outline-none text-gray-700 placeholder-gray-400 text-sm sm:text-base"
             />
           </div>
-
           <div className="flex items-center flex-1 px-4 py-3 w-full border-b md:border-b-0 border-gray-100">
             <MapPin className="text-gray-400 w-5 h-5 mr-3 shrink-0" />
             <input 
@@ -109,7 +108,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
       {/* Main Content */}
       <div className="flex flex-col lg:flex-row items-center justify-between gap-16 w-full max-w-7xl mx-auto mt-8 flex-1">
         {/* Left Column */}
@@ -127,6 +125,7 @@ export default function Hero() {
                    {tag}
                  </button>
               ))}
+              
             </div>
             <div className="flex items-center gap-3 flex-wrap ml-0 md:ml-28">
                {["sales manager", "designer", "assistant"].map((tag, i) => (
@@ -136,6 +135,7 @@ export default function Hero() {
               ))}
             </div>
           </div>
+
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-8">
             <button className="h-12 w-full sm:w-auto px-6 rounded-lg bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors shadow-lg shadow-gray-900/20">
                 Use Map View
