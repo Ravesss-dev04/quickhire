@@ -213,7 +213,6 @@ const StoriesSection = () => {
             <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
           </button>
           
-          
           <button 
             onClick={nextSlide}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-10 p-3 rounded-full bg-white shadow-lg border border-gray-100 text-gray-700 hover:text-primary hover:border-primary transition-all duration-300 group hidden md:block"
@@ -279,7 +278,6 @@ const StoriesSection = () => {
                       <p className="text-sm text-gray-500 mb-1">{story.location}</p>
                       <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">{story.role}</p>
                     </div>
-
                     {/* Key Achievements */}
                     <ul className="space-y-2 mb-5">
                       {story.bullets.map((bullet, idx) => (
@@ -292,18 +290,7 @@ const StoriesSection = () => {
 
                     {/* Footer: Platform & Stats */}
                     <div className="mt-auto bg-gray-50 rounded-xl p-3 flex items-center justify-between">
-                      <div className="flex items-center -space-x-1">
-                        {story.platform.includes('quickhire') && (
-                          <div className="w-7 h-7 bg-blue-100 rounded-full flex items-center justify-center border-2 border-white" title="QuickHire">
-                            <Building2 className="w-3.5 h-3.5 text-blue-600" />
-                          </div>
-                        )}
-                        {story.platform.includes('oddjobs') && (
-                          <div className="w-7 h-7 bg-orange-100 rounded-full flex items-center justify-center border-2 border-white" title="OddJobs">
-                            <Zap className="w-3.5 h-3.5 text-orange-600" />
-                          </div>
-                        )}
-                      </div>
+                     
                       <div className="text-right">
                         <p className="text-[10px] text-gray-500 uppercase font-semibold">Earnings / Value</p>
                         <p className="text-sm font-bold text-gray-900">{story.stats}</p>
